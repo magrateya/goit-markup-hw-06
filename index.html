@@ -68,7 +68,53 @@
         <h1 class="hero-title">
           эффективные решения для вашего бизнеса
         </h1>
-        <a href="" class="hero-button">Заказать услугу</a>
+        <button data-modal-open class="hero-button">Заказать услугу</button>
+
+        <div data-modal class="backdrop is-hidden">
+          <div class="modal">
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <button data-modal-close class="modal-close-btn">
+              <svg class="close" width="11" height="11">
+                <use href="./img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form class="js-speaker-form">
+              <div class="form-field">
+                <label for="name" class="fields-label">Имя</label>
+                <input type="text" name="username" id="name" />
+              </div>
+              <div class="form-field">
+                <label for="tel" class="fields-label">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+              <div class="form-field">
+                <label for="email" class="fields-label">Почта</label>
+                <input type="email" name="email" id="email" />
+              </div>
+
+              <div class="form-field">
+                <label for="comment" class="fields-label">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="checkbox-field">
+                <input type="checkbox" name="consent" id="consent" />
+                <label for="consent"
+                  >Согласен с рассылкой и принимаю
+                  <a href="" class="link checkbox-link"
+                    >Условия договора</a
+                  ></label
+                >
+              </div>
+              <button type="submit" class="modal-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- наши преимущества -->
       <section class="section advantages container">
@@ -469,10 +515,10 @@
 
           <div>
             <b class="join-header">подпишитесь на рассылку</b>
-            <form action="" name="user" method="POST">
+            <form>
               <input
                 type="text"
-                name=""
+                name="mail"
                 placeholder="E-mail"
                 class="mail-field"
               />
@@ -483,5 +529,7 @@
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
