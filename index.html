@@ -80,36 +80,71 @@
             </button>
             <form class="js-speaker-form">
               <div class="form-field">
+                <input
+                  type="text"
+                  name="username"
+                  id="name"
+                  placeholder=" "
+                  class="form-input"
+                />
                 <label for="name" class="fields-label">Имя</label>
-                <input type="text" name="username" id="name" />
+                <svg class="icon-form" width="12" height="12">
+                  <title>иконка поля имя</title>
+                  <use href="./img/sprite.svg#icon-name"></use>
+                </svg>
               </div>
               <div class="form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                  class="form-input"
+                />
                 <label for="tel" class="fields-label">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+                <svg class="icon-form" width="12" height="12">
+                  <title>иконка поля телефон</title>
+                  <use href="./img/sprite.svg#icon-tel"></use>
+                </svg>
               </div>
               <div class="form-field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  class="form-input"
+                />
                 <label for="email" class="fields-label">Почта</label>
-                <input type="email" name="email" id="email" />
+                <svg class="icon-form" width="12" height="12">
+                  <title>иконка поля електронка</title>
+                  <use href="./img/sprite.svg#icon-mail"></use>
+                </svg>
               </div>
 
               <div class="form-field">
-                <label for="comment" class="fields-label">Комментарий</label>
                 <textarea
+                  placeholder=" "
+                  class="form-input input-textarea"
                   name="comment"
                   id="comment"
                   cols="30"
                   rows="10"
                 ></textarea>
+                <label for="comment" class="fields-label coment"
+                  >Комментарий</label
+                >
               </div>
 
               <div class="checkbox-field">
-                <input type="checkbox" name="consent" id="consent" />
-                <label for="consent"
-                  >Согласен с рассылкой и принимаю
-                  <a href="" class="link checkbox-link"
-                    >Условия договора</a
-                  ></label
-                >
+                <label class="checkbox-label">
+                  <input class="checkbox" type="checkbox" name="consent" />
+                  <span class="checkbox-icon"></span>
+                  <p class="chexkbox-text">
+                    Согласен с рассылкой и принимаю
+                    <a href="" class="link checkbox-link">Условия договора</a>
+                  </p>
+                </label>
               </div>
               <button type="submit" class="modal-submit">Отправить</button>
             </form>
